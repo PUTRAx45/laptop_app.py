@@ -179,20 +179,6 @@ st.markdown("""
 
 
 #animasi harus nya sie karakter
-from streamlit_lottie import st_lottie
-import requests
-
-def load_lottieurl(url):
-    r = requests.get(url)
-    if r.status_code != 200:
-        return None
-    return r.json()
-
-lottie_karakter = load_lottieurl("https://lottiefiles.com/free-animation/man-using-laptop-3kqdqaSxxQ")
-
-
-st_lottie(lottie_karakter, speed=1, height=250, key="karakter_berjalan")
-
 
 
 
