@@ -119,7 +119,7 @@ def keluar():
         }
         </style>
 
-        <div class="rainbow-text">🙏 TERIMAKASIH SUDAH MENAMBAHKAN DATA 🙏</div>
+        <div class="rainbow-text">🙏 TERIMAKASIH DATA YANG KAMU BERIKAN SANGAT MEMBANTU 🙏</div>
         """,
         unsafe_allow_html=True
     )
