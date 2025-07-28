@@ -156,19 +156,19 @@ st.markdown("""
 st.markdown("""
 <style>
 .marquee {
-  width: 100%;
+  width: 90%;
   overflow: hidden;
   white-space: nowrap;
   box-sizing: border-box;
-  animation: marquee 60s linear infinite;
-  font-size: 20px;
+  animation: marquee 45s linear infinite;
+  font-size: 25px;
   color: #00ffff;
-  margin-top: 25px;
+  margin-top: 30px;
 }
 
 @keyframes marquee {
   0%   { text-indent: 100% }
-  100% { text-indent: -100% }
+  100% { text-indent: -0% }
 }
 </style>
 
