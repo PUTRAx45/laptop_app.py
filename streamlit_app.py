@@ -190,7 +190,7 @@ def load_lottieurl(url):
     return r.json()
 
 # Ambil animasi karakter dari LottieFiles (bisa diganti sesuai keinginan)
-lottie_karakter = load_lottieurl("https://lottiefiles.com/free-animation/man-using-laptop-3kqdqaSxxQ")
+lottie_karakter = load_lottieurl("https://app.lottiefiles.com/share/8416d812-b4c5-4a67-a767-7af30b472736")
 # Tampilkan animasi di bawah
 st_lottie(lottie_karakter, speed=1, height=250, key="karakter_berjalan")
 
