@@ -139,15 +139,15 @@ st.markdown(
 
 # Tampilan Menu
 st.markdown("""
-<div style='font-size:22px; font-weight:bold; color:#f5f5f5; margin-bottom:10px;'>
+<div style='font-size:24px; font-weight:bold; color:#f5f5f5; margin-bottom:15px;'>
 📋 Pilihan Menu:
 </div>
-<ul style='font-size:18px; line-height:1.8; color:#f0f0f0;'>
-  <li><b>1.</b> Tampilkan semua laptop</li>
-  <li><b>2.</b> Tambah Laptop</li>
-  <li><b>3.</b> Cari Laptop</li>
-  <li><b>4.</b> Hapus Semua Data</li>
-  <li><b>5.</b> Keluar</li>
+<ul style='font-size:18px; line-height:2; color:#f0f0f0; list-style-type: none; padding-left: 0;'>
+  <li>1️⃣ <b>Tampilkan semua laptop</b> 💻</li>
+  <li>2️⃣ <b>Tambah Laptop</b> ➕</li>
+  <li>3️⃣ <b>Cari Laptop</b> 🔍</li>
+  <li>4️⃣ <b>Hapus Semua Data</b> 🗑️</li>
+  <li>5️⃣ <b>Keluar</b> 👋</li>
 </ul>
 """, unsafe_allow_html=True)
 
