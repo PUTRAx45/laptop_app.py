@@ -178,6 +178,24 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
+#animasi harus nya sie karakter
+from streamlit_lottie import st_lottie
+import requests
+
+def load_lottieurl(url):
+    r = requests.get(url)
+    if r.status_code != 200:
+        return None
+    return r.json()
+
+lottie_karakter = load_lottieurl("https://assets4.lottiefiles.com/packages/lf20_n1crtuys.json")
+
+
+st_lottie(lottie_karakter, speed=1, height=250, key="karakter_berjalan")
+
+
+
+
 
 menu = st.text_input("Masukkan angka menu (1-5):")
 
