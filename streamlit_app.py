@@ -138,14 +138,19 @@ st.markdown(
 )
 
 # Tampilan Menu
-st.markdown("### Pilihan Menu:")
 st.markdown("""
-1. Tampilkan semua laptop  
-2. Tambah Laptop  
-3. Cari Laptop  
-4. Hapus Semua Data  
-5. Keluar  
-""")
+<div style='font-size:22px; font-weight:bold; color:#f5f5f5; margin-bottom:10px;'>
+📋 Pilihan Menu:
+</div>
+<ul style='font-size:18px; line-height:1.8; color:#f0f0f0;'>
+  <li><b>1.</b> Tampilkan semua laptop</li>
+  <li><b>2.</b> Tambah Laptop</li>
+  <li><b>3.</b> Cari Laptop</li>
+  <li><b>4.</b> Hapus Semua Data</li>
+  <li><b>5.</b> Keluar</li>
+</ul>
+""", unsafe_allow_html=True)
+
 
 menu = st.text_input("Masukkan angka menu (1-5):")
 
