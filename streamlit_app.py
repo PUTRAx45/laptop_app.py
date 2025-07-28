@@ -167,13 +167,13 @@ st.markdown("""
 }
 
 @keyframes marquee {
-  0%   { text-indent: 100% }
-  100% { text-indent: -100% }
+  50%   { text-indent: 70% }
+  100% { text-indent: -90% }
 }
 </style>
 
 <div class="marquee">
-🎉 Selamat datang di Aplikasi Manajemen Data Laptop | Tambah, Cari, dan Kelola Laptop Anda dengan Mudah! 💻
+🎉 Selamat datang di situs Mantau Data Laptop | Tambah, Cari, dan Kelola Laptop Anda dengan Mudah! di kerjakan oleh 24.02.1153 24.02.1119 24.02.1124 💻
 </div>
 """, unsafe_allow_html=True)
 
