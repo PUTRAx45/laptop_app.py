@@ -152,6 +152,33 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
+#animasi 
+st.markdown("""
+<style>
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  animation: marquee 15s linear infinite;
+  font-size: 20px;
+  color: #00ffff;
+  margin-top: 30px;
+}
+
+@keyframes marquee {
+  0%   { text-indent: 100% }
+  100% { text-indent: -100% }
+}
+</style>
+
+<div class="marquee">
+🎉 Selamat datang di Aplikasi Manajemen Data Laptop | Tambah, Cari, dan Kelola Laptop Anda dengan Mudah! 💻
+</div>
+""", unsafe_allow_html=True)
+
+
+
 menu = st.text_input("Masukkan angka menu (1-5):")
 
 if menu == "1":
