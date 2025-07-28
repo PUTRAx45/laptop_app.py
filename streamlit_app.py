@@ -160,15 +160,15 @@ st.markdown("""
   overflow: hidden;
   white-space: nowrap;
   box-sizing: border-box;
-  animation: marquee 15s linear infinite;
+  animation: marquee 60s linear infinite;
   font-size: 20px;
   color: #00ffff;
-  margin-top: 30px;
+  margin-top: 25px;
 }
 
 @keyframes marquee {
-  50%   { text-indent: 70% }
-  100% { text-indent: -90% }
+  0%   { text-indent: 100% }
+  100% { text-indent: -100% }
 }
 </style>
 
