@@ -188,7 +188,7 @@ def load_lottieurl(url):
         return None
     return r.json()
 
-lottie_karakter = load_lottieurl("https://assets4.lottiefiles.com/packages/lf20_n1crtuys.json")
+lottie_karakter = load_lottieurl("https://lottiefiles.com/free-animation/man-using-laptop-3kqdqaSxxQ")
 
 
 st_lottie(lottie_karakter, speed=1, height=250, key="karakter_berjalan")
