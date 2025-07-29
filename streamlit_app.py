@@ -172,25 +172,44 @@ st.markdown("""
 #animasi 
 st.markdown("""
 <style>
+@keyframes marquee {
+  0%   { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+@keyframes rainbow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
 .marquee-container {
   width: 100%;
   overflow: hidden;
-  background: transparent;
   margin-top: 30px;
+  padding: 10px 0;
 }
 
 .marquee-text {
   display: inline-block;
   white-space: nowrap;
-  animation: marquee 20s linear infinite;
+  animation: marquee 20s linear infinite, rainbow 8s ease-in-out infinite;
   font-size: 20px;
-  color: #00ffff;
   font-weight: bold;
-}
-
-@keyframes marquee {
-  0%   { transform: translateX(100%); }
-  100% { transform: translateX(-100%); }
+  background-image: linear-gradient(
+    270deg,
+    red,
+    orange,
+    yellow,
+    green,
+    cyan,
+    blue,
+    violet,
+    red
+  );
+  background-size: 800% 800%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 </style>
 
@@ -200,6 +219,7 @@ st.markdown("""
   </div>
 </div>
 """, unsafe_allow_html=True)
+
 
 
 
