@@ -138,18 +138,66 @@ st.markdown(
 )
 
 # Tampilan Menu
-st.markdown("""
-<div style='font-size:24px; font-weight:bold; color:#f5f5f5; margin-bottom:15px;'>
-📋 Pilihan Menu:
-</div>
-<ul style='font-size:18px; line-height:2; color:#f0f0f0; list-style-type: none; padding-left: 0;'>
-  <li>1️⃣ <b>Tampilkan semua laptop</b> 💻</li>
-  <li>2️⃣ <b>Tambah Laptop</b> ➕</li>
-  <li>3️⃣ <b>Cari Laptop</b> 🔍</li>
-  <li>4️⃣ <b>Hapus Semua Data</b> 🗑️</li>
-  <li>5️⃣ <b>Keluar</b> 👋</li>
-</ul>
-""", unsafe_allow_html=True)
+st.markdown(
+    """
+    <style>
+    /* ANIMASI BINTANG LATAR BELAKANG */
+    body::before {
+        content: "";
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: black;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        background: radial-gradient(white 1px, transparent 1px),
+                    radial-gradient(white 1px, transparent 1px);
+        background-position: 0 0, 25px 25px;
+        background-size: 50px 50px;
+        animation: stars 20s linear infinite;
+        opacity: 0.05;
+    }
+
+    @keyframes stars {
+        from {
+            background-position: 0 0, 25px 25px;
+        }
+        to {
+            background-position: -1000px 1000px, -975px 1025px;
+        }
+    }
+
+    /* MENU */
+    .menu-container {
+        font-size: 24px;
+        font-weight: bold;
+        color: var(--text-color);
+        margin-bottom: 15px;
+    }
+
+    .menu-list {
+        font-size: 18px;
+        line-height: 2;
+        color: var(--text-color);
+        list-style-type: none;
+        padding-left: 0;
+    }
+    </style>
+
+    <div class='menu-container'>📋 Pilihan Menu:</div>
+    <ul class='menu-list'>
+      <li>1️⃣ <b>Tampilkan semua laptop</b> 💻</li>
+      <li>2️⃣ <b>Tambah Laptop</b> ➕</li>
+      <li>3️⃣ <b>Cari Laptop</b> 🔍</li>
+      <li>4️⃣ <b>Hapus Semua Data</b> 🗑️</li>
+      <li>5️⃣ <b>Keluar</b> 👋</li>
+    </ul>
+    """,
+    unsafe_allow_html=True
+)
+
+
 
 
 #animasi 
