@@ -138,64 +138,33 @@ st.markdown(
 )
 
 # Tampilan Menu
-st.markdown(
-    """
-    <style>
-    /* ANIMASI BINTANG LATAR BELAKANG */
-    body::before {
-        content: "";
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        background: black;
-        z-index: -0;
-        top: 0;
-        left: 0;
-        background: radial-gradient(white 1px, transparent 1px),
-                    radial-gradient(white 1px, transparent 1px);
-        background-position: 0 0, 25px 25px;
-        background-size: 50px 50px;
-        animation: stars 20s linear infinite;
-        opacity: 0.05;
-    }
+st.markdown("""
+<style>
+.menu-container {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-bottom: 15px;
+}
 
-    @keyframes stars {
-        from {
-            background-position: 0 0, 25px 25px;
-        }
-        to {
-            background-position: -1000px 1000px, -975px 1025px;
-        }
-    }
+.menu-list {
+    font-size: 18px;
+    line-height: 2;
+    color: var(--text-color);
+    list-style-type: none;
+    padding-left: 0;
+}
+</style>
 
-    /* MENU */
-    .menu-container {
-        font-size: 24px;
-        font-weight: bold;
-        color: var(--text-color);
-        margin-bottom: 15px;
-    }
-
-    .menu-list {
-        font-size: 18px;
-        line-height: 5;
-        color: var(--text-color);
-        list-style-type: none;
-        padding-left: 1;
-    }
-    </style>
-
-    <div class='menu-container'>📋 Pilihan Menu:</div>
-    <ul class='menu-list'>
-      <li>1️⃣ <b>Tampilkan semua laptop</b> 💻</li>
-      <li>2️⃣ <b>Tambah Laptop</b> ➕</li>
-      <li>3️⃣ <b>Cari Laptop</b> 🔍</li>
-      <li>4️⃣ <b>Hapus Semua Data</b> 🗑️</li>
-      <li>5️⃣ <b>Keluar</b> 👋</li>
-    </ul>
-    """,
-    unsafe_allow_html=True
-)
+<div class='menu-container'>📋 Pilihan Menu:</div>
+<ul class='menu-list'>
+  <li>1️⃣ <b>Tampilkan semua laptop</b> 💻</li>
+  <li>2️⃣ <b>Tambah Laptop</b> ➕</li>
+  <li>3️⃣ <b>Cari Laptop</b> 🔍</li>
+  <li>4️⃣ <b>Hapus Semua Data</b> 🗑️</li>
+  <li>5️⃣ <b>Keluar</b> 👋</li>
+</ul>
+""", unsafe_allow_html=True)
 
 
 
@@ -203,27 +172,35 @@ st.markdown(
 #animasi 
 st.markdown("""
 <style>
-.marquee {
-  width: 90%;
+.marquee-container {
+  width: 100%;
   overflow: hidden;
-  white-space: nowrap;
-  box-sizing: border-box;
-  animation: marquee 25s linear infinite;
-  font-size: 25px;
-  color: #00ffff;
+  background: transparent;
   margin-top: 30px;
 }
 
+.marquee-text {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 20s linear infinite;
+  font-size: 20px;
+  color: #00ffff;
+  font-weight: bold;
+}
+
 @keyframes marquee {
-  0%   { text-indent: 100% }
-  70% { text-indent: 0% }
+  0%   { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
 }
 </style>
 
-<div class="marquee">
-🎉 Selamat datangAplikasi Manajemen Data Laptop | Tambah, Cari, dan Kelola Laptop Anda dengan Mudah! di kerjakan oleh 24.02.1153 24.02.1119 24.02.1124 💻
+<div class="marquee-container">
+  <div class="marquee-text">
+    🎉 Selamat datang di Aplikasi Manajemen Data Laptop | Tambah, Cari, dan Kelola Laptop Anda dengan Mudah! | Dikerjakan oleh 24.02.1153, 24.02.1119, 24.02.1124 💻
+  </div>
 </div>
 """, unsafe_allow_html=True)
+
 
 
 #animasi harus nya sie karakter
