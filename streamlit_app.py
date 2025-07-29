@@ -179,20 +179,6 @@ st.markdown("""
 
 
 #animasi harus nya sie karakter
-from streamlit_lottie import st_lottie
-import requests
-
-# Fungsi untuk ambil animasi dari URL
-def load_lottieurl(url):
-    r = requests.get(url)
-    if r.status_code != 200:
-        return None
-    return r.json()
-
-# Ambil animasi karakter dari LottieFiles (bisa diganti sesuai keinginan)
-lottie_karakter = load_lottieurl("https://app.lottiefiles.com/share/8416d812-b4c5-4a67-a767-7af30b472736")
-# Tampilkan animasi di bawah
-st_lottie(lottie_karakter, speed=1, height=250, key="karakter_berjalan")
 
 
 
