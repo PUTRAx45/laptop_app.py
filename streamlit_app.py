@@ -148,12 +148,12 @@ st.markdown(
         width: 100%;
         height: 100%;
         background: black;
-        z-index: -1;
-        top: 1;
-        left: 1;
+        z-index: -0;
+        top: 0;
+        left: 0;
         background: radial-gradient(white 1px, transparent 1px),
                     radial-gradient(white 1px, transparent 1px);
-        background-position: 1 0, 25px 25px;
+        background-position: 0 0, 25px 25px;
         background-size: 50px 50px;
         animation: stars 20s linear infinite;
         opacity: 0.05;
@@ -216,7 +216,7 @@ st.markdown("""
 
 @keyframes marquee {
   0%   { text-indent: 100% }
-  100% { text-indent: 100% }
+  100% { text-indent: 85% }
 }
 </style>
 
