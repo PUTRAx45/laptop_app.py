@@ -204,7 +204,7 @@ st.markdown(
 st.markdown("""
 <style>
 .marquee {
-  width: 100%;
+  width: 90%;
   overflow: hidden;
   white-space: nowrap;
   box-sizing: border-box;
@@ -216,7 +216,7 @@ st.markdown("""
 
 @keyframes marquee {
   0%   { text-indent: 100% }
-  100% { text-indent: 85% }
+  70% { text-indent: 0% }
 }
 </style>
 
