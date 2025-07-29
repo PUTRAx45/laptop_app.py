@@ -149,11 +149,11 @@ st.markdown(
         height: 100%;
         background: black;
         z-index: -1;
-        top: 0;
-        left: 0;
+        top: 1;
+        left: 1;
         background: radial-gradient(white 1px, transparent 1px),
                     radial-gradient(white 1px, transparent 1px);
-        background-position: 0 0, 25px 25px;
+        background-position: 1 0, 25px 25px;
         background-size: 50px 50px;
         animation: stars 20s linear infinite;
         opacity: 0.05;
@@ -178,10 +178,10 @@ st.markdown(
 
     .menu-list {
         font-size: 18px;
-        line-height: 2;
+        line-height: 5;
         color: var(--text-color);
         list-style-type: none;
-        padding-left: 0;
+        padding-left: 1;
     }
     </style>
 
@@ -204,11 +204,11 @@ st.markdown(
 st.markdown("""
 <style>
 .marquee {
-  width: 90%;
+  width: 100%;
   overflow: hidden;
   white-space: nowrap;
   box-sizing: border-box;
-  animation: marquee 45s linear infinite;
+  animation: marquee 25s linear infinite;
   font-size: 25px;
   color: #00ffff;
   margin-top: 30px;
@@ -216,12 +216,12 @@ st.markdown("""
 
 @keyframes marquee {
   0%   { text-indent: 100% }
-  100% { text-indent: -0% }
+  100% { text-indent: 100% }
 }
 </style>
 
 <div class="marquee">
-🎉 Selamat datang di situs Mantau Data Laptop | Tambah, Cari, dan Kelola Laptop Anda dengan Mudah! di kerjakan oleh 24.02.1153 24.02.1119 24.02.1124 💻
+🎉 Selamat datangAplikasi Manajemen Data Laptop | Tambah, Cari, dan Kelola Laptop Anda dengan Mudah! di kerjakan oleh 24.02.1153 24.02.1119 24.02.1124 💻
 </div>
 """, unsafe_allow_html=True)
 
